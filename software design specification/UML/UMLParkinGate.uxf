@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>110</x>
+      <y>30</y>
+      <w>690</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>User
+--
++ Name: string
++ CarNumber: int
++ ArrivalDate: Date
++ DepartureDate: Date
+--
++ User (string Name, int CarNumber, Date ArrivalDate, Date DepartureDate)
+- addRecordToDB ( int CarNumber )
+- deleteRecordFromDB ( )
+- deleteRecordFromDBAuto ( )
++ showListFromDB ( ): array[]
+ 
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>260</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;120.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>880</x>
+      <y>240</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Update and show
+
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>510</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Gate
+--
+- CounterToClose: int
+- IsOpen: bool
+--
++ openGate();
++ closeGate();
+
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>510</y>
+      <w>320</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Entry
+--
+- MyPic: Picture
+- NumberToCheck: int
+--
+- checkPic ( Picture MyPic ); int
+- IsExistent ( int CarNumber ): bool
+
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>30</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>BookingSystem
+--
+- supplyData ( ): Guest
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>60</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>820</x>
+      <y>70</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Supply
+
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>270</y>
+      <w>30</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>370</x>
+      <y>310</y>
+      <w>110</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Check in
+repository
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>540</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>290</x>
+      <y>520</y>
+      <w>110</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Control
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1130</x>
+      <y>40</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>External System
+
+
+style=wordwrap
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>320</y>
+      <w>380</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>MainForm
+--
+- ButtonInsert: Button
+- ButtonDelete: Button
+- TbxInsertNum: TextBox
+- TbxDeleteNum: TextBox
+--
+- showFeedbackToUser: MessageBox
+- showTable: Jtable
+
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
